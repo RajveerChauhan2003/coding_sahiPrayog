@@ -26,21 +26,21 @@ function showMessage(response) {
 
     // Add a mouseover event listener to the "No" button
     noButton.addEventListener("mouseover", () => {
-      if (!videoPlayed) {
-        const videoElement = document.createElement("video");
-        videoElement.src = "./Maroon 5 - Sugar.mp4#t=42";
-        videoElement.autoplay = true;
-        videoElement.controls = false;
-        document.body.appendChild(videoElement);
-        videoElement.style.position = "fixed";
-        videoElement.style.top = "40%";
-        videoElement.style.left = "50%";
-        videoElement.style.transform = "translate(-50%, -50%)";
-        videoElement.style.width = "700px"
-        document.body.appendChild(videoElement);
-        // Set the flag to true after playing the video
-        videoPlayed = true;
-      }
+      // if (!videoPlayed) {
+      //   const videoElement = document.createElement("video");
+      //   videoElement.src = "./Maroon 5 - Sugar.mp4#t=42";
+      //   videoElement.autoplay = true;
+      //   videoElement.controls = false;
+      //   document.body.appendChild(videoElement);
+      //   videoElement.style.position = "fixed";
+      //   videoElement.style.top = "40%";
+      //   videoElement.style.left = "50%";
+      //   videoElement.style.transform = "translate(-50%, -50%)";
+      //   videoElement.style.width = "700px"
+      //   document.body.appendChild(videoElement);
+      //   // Set the flag to true after playing the video
+      //   videoPlayed = true;
+      // }
 
       // Generate new random coordinates when the button is hovered
       const randomX = Math.max(0, Math.floor(Math.random() * maxWidth));
